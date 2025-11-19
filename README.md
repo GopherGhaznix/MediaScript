@@ -10,11 +10,11 @@ Once the subtitle file is generated, you can save it to your local drive, and us
 Overall, MediaScript provides an easy and convenient way to create subtitle files for any media file, without the need for manual transcription or editing.
 
 ## Demo:
-![Screenshot](https://github.com/LinuxSploit/MediaScript/raw/main/screenshot/screenshot.gif)
+![Screenshot](https://github.com/GopherGhaznix/MediaScript/raw/main/screenshot/screenshot.gif)
 
 # Build
 ```bash
-git clone --recursive https://github.com/LinuxSploit/MediaScript.git
+git clone --recursive https://github.com/GopherGhaznix/MediaScript.git
 cd MediaScript/
 ```
 
@@ -54,6 +54,20 @@ compile binary
 ```bash
 go build .
 ```
+
+## TODOs:
+- Support export formats: SRT, VTT, ASS, TXT, JSON
+- Add speaker identification (speaker diarization)
+- Add subtitle translation to multiple languages
+- Generate word-level timestamps
+- Enable burn-in subtitles onto video with styling options (font, color, position)
+- Add summary generation
+### Dubbing TODOs:
+- Text-to-speech dubbing in multiple languages
+- Multi-speaker voice assignment
+- Emotion-aware voice synthesis (tone/intensity)
+- Option to keep background music but replace speech
+- Export dubbed video in various formats
 
 ## Supported Lanuage:
 - English

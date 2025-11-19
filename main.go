@@ -155,24 +155,59 @@ func UIcanvas() fyne.CanvasObject {
 		progressbar,
 	))
 	// about tab item
-	fiverr_link, err := url.Parse("https://www.fiverr.com/bilalhameed4556")
+	website_link, err := url.Parse("http://ghaznix.com/")
 	if err != nil {
 		log.Fatal(err)
 	}
-	github_link, err := url.Parse("https://github.com/linuxsploit")
+	github_link, err := url.Parse("https://github.com/GopherGhaznix")
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	aboutTab := container.NewTabItemWithIcon(
+		"About",
+		theme.InfoIcon(),
+		container.NewVBox(
+			// Name with a fancy style
+			widget.NewLabelWithStyle("Developed by Ghaznix", fyne.TextAlignCenter, fyne.TextStyle{
+				Bold:   true,
+				Italic: true,
+			}),
+
+			widget.NewSeparator(),
+
+			// Links section
+			container.NewVBox(
+				widget.NewHyperlinkWithStyle(
+					"Website",
+					website_link,
+					fyne.TextAlignCenter,
+					fyne.TextStyle{Bold: true},
+				),
+				widget.NewHyperlinkWithStyle(
+					"GitHub",
+					github_link,
+					fyne.TextAlignCenter,
+					fyne.TextStyle{Bold: true},
+				),
+			),
+
+			widget.NewSeparator(),
+
+			// Footer details
+			widget.NewLabelWithStyle(
+				"Made with ❤️ using Fyne/v2",
+				fyne.TextAlignCenter,
+				fyne.TextStyle{},
+			),
+		),
+	)
+
 	// Tabs container which contains both: MediaTab, ScriptTab
 	tabs := container.NewAppTabs(
 		mediaTab,
 		scriptTab,
-		container.NewTabItemWithIcon("About", theme.AccountIcon(), container.NewVBox(
-			widget.NewLabelWithStyle("Develop by:", fyne.TextAlignCenter, fyne.TextStyle{Bold: true}),
-			widget.NewLabelWithStyle("Bilal Hameed", fyne.TextAlignCenter, fyne.TextStyle{Bold: false}),
-			widget.NewHyperlinkWithStyle("Fiverr", fiverr_link, fyne.TextAlignCenter, fyne.TextStyle{Bold: true}),
-			widget.NewHyperlinkWithStyle("GitHub", github_link, fyne.TextAlignCenter, fyne.TextStyle{Bold: true}),
-		)),
+		aboutTab,
 	)
 	// copy action toolbar
 	Window.SetMainMenu(fyne.NewMainMenu(fyne.NewMenu("Action", fyne.NewMenuItem("export .srt", func() {
