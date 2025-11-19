@@ -28,7 +28,7 @@ Feel free to open an issue as well.
 If you have ideas, suggestions, or want to discuss anything related to the project, feel free to reach out:
 
 - **Discord User ID:** 1226149603993190483  
-- **Discord Username:** ghaznix.com**
+- **Discord Username:** ghaznix.com
 
 Let’s build something amazing together! 🚀
 
