@@ -12,6 +12,27 @@ Overall, MediaScript provides an easy and convenient way to create subtitle file
 ## Demo:
 ![Screenshot](https://github.com/GopherGhaznix/MediaScript/raw/main/screenshot/screenshot.gif)
 
+## 🤝 Contribute
+
+We welcome contributions from everyone!  
+Whether it's bug fixes, new features, feedback, or documentation improvements — **feel free to jump in and contribute.**
+
+### How to Contribute
+1. Fork the repository  
+2. Create a new branch for your feature or fix  
+3. Commit your changes  
+4. Submit a pull request  
+
+Feel free to open an issue as well.
+
+If you have ideas, suggestions, or want to discuss anything related to the project, feel free to reach out:
+
+- **Discord User ID:** 1226149603993190483  
+- **Discord Username:** ghaznix.com**
+
+Let’s build something amazing together! 🚀
+
+
 # Build
 ```bash
 git clone --recursive https://github.com/GopherGhaznix/MediaScript.git
@@ -62,12 +83,12 @@ go build .
 - Generate word-level timestamps
 - Enable burn-in subtitles onto video with styling options (font, color, position)
 - Add summary generation
-### Dubbing TODOs:
-- Text-to-speech dubbing in multiple languages
-- Multi-speaker voice assignment
-- Emotion-aware voice synthesis (tone/intensity)
-- Option to keep background music but replace speech
-- Export dubbed video in various formats
+    ### Dubbing TODOs:
+    - Text-to-speech dubbing in multiple languages
+    - Multi-speaker voice assignment
+    - Emotion-aware voice synthesis (tone/intensity)
+    - Option to keep background music but replace speech
+    - Export dubbed video in various formats
 
 ## Supported Lanuage:
 - English
